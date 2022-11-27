@@ -1,0 +1,129 @@
+$color_1: white;
+$color_2: #fff;
+$color_3: #FA944B;
+$color_4: #44BCDD;
+$color_5: #595959;
+$background-color_1: #3B5998;
+$background-color_2: #007bb7;
+$background-color_3: #F9F9F9;
+
+/*SOCİAL İCONS*/
+/* footer social icons */
+/* footer social icons */
+footer {
+	background: #16222A;
+	background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+	background: linear-gradient(59deg, #3A6073, #16222A);
+	color: $color_1;
+	margin-top: 100px;
+	a {
+		color: $color_2;
+		font-size: 14px;
+		transition-duration: 0.2s;
+		&:hover {
+			color: $color_3;
+			text-decoration: none;
+		}
+	}
+}
+.copy {
+	font-size: 12px;
+	padding: 10px;
+	border-top: 1px solid #FFFFFF;
+}
+.footer-middle {
+	padding-top: 2em;
+	color: $color_1;
+}
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left: 0 !important;
+	padding: 0;
+	li {
+		display: inline;
+		margin: 0 5px;
+	}
+}
+.social-network {
+	a.icoFacebook {
+		&:hover {
+			background-color: $background-color_1;
+			i {
+				color: $color_2;
+			}
+		}
+	}
+	a.icoLinkedin {
+		&:hover {
+			background-color: $background-color_2;
+			i {
+				color: $color_2;
+			}
+		}
+	}
+	a.socialIcon {
+		&:hover {
+			color: $color_4;
+		}
+	}
+	a {
+		background-color: $background-color_3;
+	}
+}
+.socialHoverClass {
+	color: $color_4;
+}
+.social-circle {
+	li {
+		a {
+			display: inline-block;
+			position: relative;
+			margin: 0 auto 0 auto;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+			border-radius: 50%;
+			text-align: center;
+			width: 30px;
+			height: 30px;
+			font-size: 15px;
+			&:hover {
+				i {
+					-moz-transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+					-ms--transform: rotate(360deg);
+					transform: rotate(360deg);
+					-webkit-transition: all 0.2s;
+					-moz-transition: all 0.2s;
+					-o-transition: all 0.2s;
+					-ms-transition: all 0.2s;
+					transition: all 0.2s;
+				}
+			}
+		}
+		i {
+			margin: 0;
+			line-height: 30px;
+			text-align: center;
+		}
+	}
+	i {
+		color: $color_5;
+		-webkit-transition: all 0.8s;
+		-moz-transition: all 0.8s;
+		-o-transition: all 0.8s;
+		-ms-transition: all 0.8s;
+		transition: all 0.8s;
+	}
+}
+.triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}

@@ -1,0 +1,135 @@
+.s-product{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 99;
+    .product-detail-modal{
+        position: fixed;
+        top:55%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        z-index: 100;
+        box-shadow: rgba(149,157,165,0.2) 0px 8px 24px;
+        border-radius: 4px;
+        padding: 36px 24px;
+        width: 90%;
+        background: white;
+        max-width: 920px;
+        .close-button{
+            position: absolute;
+            right: -6px;
+            top:-12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            transition: .3s ease-in-out;
+            border-radius: 50%;
+            &:hover{
+                color: gold;
+            }
+        }
+        .detail-content{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            overflow-y: scroll;
+            rotate: 32px;
+            height: 50vh;
+            .detail-left{
+                .detail-img{
+                    max-width: 500px;
+                    img{
+                        width: 400px;
+                        height: 300px;
+                        border-radius: 4px;
+                    }
+                }
+            }
+            .detail-right{
+                .detail-info{
+                    h3{
+                        color: rgb(21, 157, 112);
+                        letter-spacing: 1px;
+                        font-size: 18px;
+                        font-weight: 600;
+                        padding: 5px 10px;
+                    }
+                    p{
+                        color: gray;
+                        letter-spacing: 1px;
+                        line-height: 19px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        padding: 5px 10px;
+                        width: 100%;
+                        text-align: justify;
+                    }
+                    .price{
+                        padding: 8px 0px 5px 10px;
+                        font-size: 18px;
+                        color: brown;
+                        font-weight: 800;
+                        letter-spacing: 1.1px;
+                    }
+                    .qty{
+                        display: flex;
+                        align-items: center;
+                        padding: 7px;
+                        .qty-text{
+                            color: gray;
+                            font-weight: 600;
+                            letter-spacing: 1px;
+                            margin-right: 8px;
+                        }
+                        .qty-change{
+                            display: flex;
+                            gap: 14px;
+                            align-items: center;
+                            .qty-dec{
+                               border: none;
+                               background: none;
+                               outline: none;
+                               font-size: 18px;
+                               width: 30px;
+                               height: 30px;
+                               cursor: pointer;
+                               border-radius: 50%;
+                               border: 1px solid grey;
+                               display: flex;
+                               align-items: center;
+                               justify-content: center;
+                               &:hover{
+                                background: rgb(235, 226, 226);
+                               }
+                            }
+                        }
+                    }
+                    .add-btn{
+                        margin: 25px 10px;
+                        width: 200px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                        .btn-icon{
+                           font-size: 22px;
+                           margin-right:5px;
+                           color: brown;
+                           margin-top: -4px;
+                        }
+                        .btn-text{
+                           letter-spacing: 1px;
+                           text-transform: capitalize;
+                           font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

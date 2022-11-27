@@ -1,0 +1,13 @@
+.slider{
+    height: 24rem;
+    z-index: 1;
+    
+    img{
+        height: 23rem;
+        opacity: 80%;
+        object-fit: cover;
+    }
+}
+.carousel-control-prev-icon{
+    color: red !important;
+}

@@ -1,0 +1,121 @@
+.navbar-data{
+    .navbar{
+        background-color: #f6f5fc;
+        height: 70px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 40px;
+        z-index: 999;
+        .left{
+            border: 1px solid rgb(221, 170, 94);
+            padding: 10px;
+            border-radius: 6px;
+            width: 175px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            // :hover{
+            //     background-color: white;
+            // }
+            transition: .3s ease-in;
+            span:nth-child(1){
+              color: rgba(163, 39, 136, 0.936);
+              letter-spacing: 1.1px;
+              font-size: 18px;
+              font-weight: 800;
+            }
+            :nth-child(2){
+                color: rgba(31, 94, 134, 0.918);
+                font-size: 20px;
+                font-weight: 900;
+                letter-spacing: 1.1px;
+            } 
+        }
+        .right{
+            width: 28rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .search-box{
+                width: 80%;
+                border: 1px solid saddlebrown;
+                padding: 5px;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                form{
+                    input{
+                        padding: 5px 7px;
+                        width: 90%;
+                        border: none;
+                        outline: none;
+                        background-color: inherit;
+                        color: black;
+                    }
+                    button{
+                        background: none;
+                        color: gray;
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+            .cart{
+                position: relative;
+                .icon{
+                    font-size: 22px;
+                     cursor: pointer;
+                }
+                .count{
+                   position: absolute;
+                   top: -10px;
+                   display: inline-flex;
+                   justify-content: center;
+                   align-items: center;
+                   background-color: goldenrod;
+                   width: 24px;
+                   height: 24px;
+                   border-radius: 50%;
+                   font-size: 14px;
+                   color: whitesmoke;
+                   padding: 2px;
+                }
+            }
+        }
+    }
+    .nav-areas{
+        background-color: rgb(6, 40, 63);
+        margin-top: 60px;
+        height: 50px;
+        padding-top: 12.5px;
+        align-items: center;
+        z-index: 2;
+        .nav-c{
+             padding-right: 45px;
+            ul{
+                color: white;
+                padding-top: 8px;
+                display: flex;
+                gap: 14px;
+                justify-content: end;
+                li{
+                    display: inline;
+                    .nav-link{
+                        letter-spacing: 1.2px;
+                        font-size: 14px;
+                        font-weight: 400;
+                        cursor: pointer;
+                        text-transform: lowercase;
+                        &:hover{
+                            color: goldenrod;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
